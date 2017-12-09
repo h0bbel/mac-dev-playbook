@@ -6,43 +6,29 @@ configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/h0bbel/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Dropbox/myCode/dotfiles
 dotfiles_files:
   - .bash_profile
+  - .bash_aliases
+  - .bash.prompt
   - .gitignore
   - .inputrc
-  - .osx
-  - .vimrc
+  - .macos
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - bash-completion
-  - chromedriver
-  - doxygen
   - gettext
-  - gifsicle
   - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
   - ssh-copy-id
   - cowsay
   - readline
   - openssl
-  - pv
-  - wget
-  - wrk
+  - curl
+  - mas
 
 homebrew_taps:
   - homebrew/core
@@ -51,29 +37,40 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
   - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - limechat
-  - macvim
-  - sequel-pro
-  - skitch
+  - appcleaner
   - slack
-  - sublime-text
-  - transmit
-  - vagrant
-  - virtualbox
+  - royal_tsx
+  - spectacle
+  - box-sync
+  - google-chrome
+  - vmware-fusion
+  - filezilla
+  - omnigraffle
+  - tunnelbear
+  - secure-pipes
+  - the-unarchiver	
+  - iterm2
+  - github-desktop
+  - kindle
+  - postman
+  - royal-tsx
+  
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  - { id: 937984704, name: "Amphetamine" }
+  - { id: 1091189122, name: "Bear" }
+  - { id: 1039633667, name: "Irvue" }
+  - { id: 568494494, name: "Pocket" }
+  - { id: 585829637, name: "Todoist" }
+  - { id: 409789998, name: "Twitter" }
+ 
 mas_email: ""
 mas_password: ""
+mas_upgrade_all_apps: yes
 
-osx_script: "~/.osx --no-restart"
+osx_script: "~/.macos --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
