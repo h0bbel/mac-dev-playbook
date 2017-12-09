@@ -40,7 +40,6 @@ homebrew_cask_apps:
   - dropbox
   - appcleaner
   - slack
-  - royal_tsx
   - spectacle
   - box-sync
   - google-chrome
