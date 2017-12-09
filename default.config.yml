@@ -50,7 +50,6 @@ homebrew_cask_apps:
   - secure-pipes
   - the-unarchiver	
   - iterm2
-  - github-desktop
   - kindle
   - postman
   - royal-tsx
